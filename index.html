@@ -21,6 +21,21 @@
             <p>Credit Risk Analyst | Data Scientist | Finance Enthusiast</p>
         </div>
     </header>
+
+    <!-- Pop-up Modal -->
+    <div id="popup-modal" class="popup-modal">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">X CLOSE</span>
+            <h2>Our next release is on September 10. Get notified.</h2>
+            <form id="popup-form" onsubmit="return handleFormSubmit(event)">
+                <input type="email" id="popup-email" placeholder="Email" required>
+                <input type="tel" id="popup-phone" placeholder="Phone Number" required>
+                <button type="submit">SIGN UP</button>
+            </form>
+            <p id="popup-message" class="popup-message"></p>
+        </div>
+    </div>
+
     <main>
         <section id="home" class="introduction">
             <h2>Welcome to My Professional Portfolio</h2>
@@ -46,25 +61,11 @@
             </div>
         </section>
     </main>
+
     <footer>
         <p>© 2024 Alexander J. Mulhern</p>
         <p><a href="mailto:alexanderjmulhern@gmail.com">Email Me</a> | <a href="https://www.linkedin.com/in/alexanderjmulhern/">LinkedIn</a> | <a href="https://github.com/mulhal">GitHub</a></p>
     </footer>
-
-    <!-- Pop-up Modal -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" id="closePopup">&times;</span>
-            <h2>Our next release is on September 10. Get notified.</h2>
-            <form>
-                <input type="email" placeholder="YOUR@EMAIL.COM" required>
-                <div class="phone-container">
-                    <input type="tel" placeholder="+ PHONE NUMBER" required>
-                </div>
-                <button type="submit">SIGN UP</button>
-            </form>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
