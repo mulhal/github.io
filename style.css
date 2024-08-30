@@ -133,6 +133,12 @@ footer {
     width: 100%;
 }
 
+.phone-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .popup form button {
     padding: 10px;
     font-size: 1em;
